@@ -1,0 +1,14 @@
+ INFO 1 2023/09/12 23:05:37.301 start upload dir: D:\Test\Upload to server: /v1
+ERROR 1 2023/09/12 23:06:52.358 Failed to login ftp 10.20.228.50:21
+org.apache.commons.net.ftp.FTPConnectionClosedException: Connection closed without indication.
+	at org.apache.commons.net.ftp.FTP.__getReply(FTP.java:324)
+	at org.apache.commons.net.ftp.FTP.__getReply(FTP.java:300)
+	at org.apache.commons.net.ftp.FTP._connectAction_(FTP.java:438)
+	at org.apache.commons.net.ftp.FTPClient._connectAction_(FTPClient.java:962)
+	at org.apache.commons.net.ftp.FTPClient._connectAction_(FTPClient.java:950)
+	at org.apache.commons.net.SocketClient._connect(SocketClient.java:244)
+	at org.apache.commons.net.SocketClient.connect(SocketClient.java:202)
+	at com.ftp.FTPSyncCore.connectServer(FTPSyncCore.java:48)
+	at com.ftp.FTPSync.uploadDirectoryToServer(FTPSync.java:66)
+	at com.ftp.FTPSync.uploadDirectory(FTPSync.java:28)
+	at com.ftp.FTPMain.main(FTPMain.java:19)
